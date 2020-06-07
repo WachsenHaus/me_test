@@ -47,6 +47,9 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /* 애니메이션 */
+  --animation-duration: 250ms;
 }
 
 /* 유니버설 태그 */
@@ -65,6 +68,13 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -139,4 +149,150 @@ p {
 }
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* home */
+
+#home {
+  background: url("imgs/home-background.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-light-white);
+  border-radius: var(--size-border-radius);
+
+  /* border: ; */
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  /* 보통 1000에서 1200이 데스크탑에서 보기 편한거임. */
+}
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80ox 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  background-color: yellow;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+  /* 250~300ms가 적합한 수치임.  */
+}
+.major__icon:hover i {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+.job__period {
+  font-size: var(--font-micro);
+}
+
+/* 스킬! */
+
+#skills {
+  background-color: var(--color-yellow);
+}
+.skill {
+  margin-bottom: 32px;
+}
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+.skillset__title {
+  color: var(--color-white);
+}
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+.skillset__right {
+  flex-basis: 40%;
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: grey;
+}
+.skill__value {
+  width: 70%;
+  height: 3px;
+  background-color: var(--color-orange);
+}
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etx {
+  padding: 20px;
 }
