@@ -10,8 +10,11 @@
     <meta name="author" content="Younghoon" />
 
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet"  href="style.css" />
+
     <script src="https://kit.fontawesome.com/c0a9fdc19a.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet" />
   </head>
   <body>
@@ -31,7 +34,13 @@
           <li class="navbar__menu__item">Contact</li>
         </ul>
       </div>
+
+      <button class="navbar__toggle-btn">
+          <i class="fas fa-bars"></i>
+      </button>
     </nav>
+
+    <!-- Home -->
     <section id="home">
       <img src="imgs/profile.png" alt="최영훈의 프로필 사진입니다." class="home__avatar" />
       <h1 class="home__title">
@@ -188,37 +197,39 @@
      
     <!-- Work -->
     <section id="work" class="section">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn active">All <span class="category__count">8</span></button>
-        <button class="category__btn">Front-end <span class="category__count">3</span></button>
-        <button class="category__btn">Back-end <span class="category__count">3</span></button>
-        <button class="category__btn">PC <span class="category__count">2</span></button>
+    <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn active">All <span class="category__count">8</span></button>
+          <button class="category__btn">Front-end <span class="category__count">3</span></button>
+          <button class="category__btn">Back-end <span class="category__count">3</span></button>
+          <button class="category__btn">PC <span class="category__count">2</span></button>
+        </div>
+  
+        <div class="work__projects">
+          <a href="" class="project" target="blank">
+              <img src="" alt="프로젝트1의 사진입니다." class="project__img"/>
+              <div class="project__description">
+                  <h3>Youtube Site</h3>
+                  <span>Clone Coding </span>
+              </div>
+          </a>   
+          <a href="" class="project" target="blank">
+              <img src="" alt="프로젝트1의 사진입니다." class="project__img"/>
+              <div class="project__description">
+                  <h3>Youtube Site</h3>
+                  <span>Clone Coding </span>
+              </div>
+          </a>   
+          <a href="" class="project" target="blank">
+              <img src="" alt="프로젝트1의 사진입니다." class="project__img"/>
+              <div class="project__description">
+                  <h3>Youtube Site</h3>
+                  <span>Clone Coding </span>
+              </div>
+          </a>   
       </div>
-
-      <div class="work__projects">
-        <a href="" class="project" target="blank">
-            <img src="" alt="프로젝트1의 사진입니다." class="project__img"/>
-            <div class="project__description">
-                <h3>Youtube Site</h3>
-                <span>Clone Coding </span>
-            </div>
-        </a>   
-        <a href="" class="project" target="blank">
-            <img src="" alt="프로젝트1의 사진입니다." class="project__img"/>
-            <div class="project__description">
-                <h3>Youtube Site</h3>
-                <span>Clone Coding </span>
-            </div>
-        </a>   
-        <a href="" class="project" target="blank">
-            <img src="" alt="프로젝트1의 사진입니다." class="project__img"/>
-            <div class="project__description">
-                <h3>Youtube Site</h3>
-                <span>Clone Coding </span>
-            </div>
-        </a>   
     </div>
     </section>
     <!-- Testimonials -->
@@ -228,7 +239,7 @@
       <div class="testimonials">
         <div class="testimonial">
           <img src="" alt="" class="testimonial__avatar" />
-          <div class="testimonial__speech-Bubble">
+          <div class="testimonial__speech-bubble">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum hic velit ratione aspernatur eaque molestiae totam, praesentium eum soluta
               corrupti, sequi dolorem earum voluptas in odit quisquam, accusamus ex officiis.
@@ -236,6 +247,17 @@
             <p class="name"><a href="">Ellie</a>Samsung</p>
           </div>
         </div>
+
+        <div class="testimonial">
+             <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum hic velit ratione aspernatur eaque molestiae totam, praesentium eum soluta
+                corrupti, sequi dolorem earum voluptas in odit quisquam, accusamus ex officiis.
+              </p>
+              <p class="name"><a href="">Ellie</a>Samsung</p>
+            </div>
+            <img src="" alt="" class="testimonial__avatar" />
+          </div>
       </div>
     </section>
     <!-- Contact -->
