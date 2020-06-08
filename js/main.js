@@ -30,6 +30,12 @@ navbarMenu.addEventListener("click", () => {
   scrollIntoView(link);
 });
 
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+  console.log("a");
+});
+
 //컨택트버튼클릭시 해당 요소로 이동
 const contactBtn = document.querySelector(".home__contact");
 contactBtn.addEventListener("click", () => {
