@@ -27,6 +27,7 @@ navbarMenu.addEventListener("click", () => {
   if (link === null) {
     return;
   }
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
 });
 

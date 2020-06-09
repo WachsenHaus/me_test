@@ -133,7 +133,9 @@ p {
   transition: all var(--animation-duration) ease-in-out;
   z-index: 5;
 }
-
+#navbar.navbar--dark {
+  padding: 16px;
+}
 .navbar__menu {
   display: flex;
 }
@@ -157,10 +159,11 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 24px;
+  top: 19px;
   right: 32px;
   font-size: 24px;
   display: none;
+  color: var(--color-white);
 }
 #navbar.navbar--dark {
   background-color: var(--color-pink);
@@ -407,18 +410,18 @@ p {
   opacity: 0.8;
 }
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 .project__description h3:after {
   content: "";
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-dark-white);
   display: block;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
 }
 
@@ -500,15 +503,14 @@ p {
   }
   .navbar__menu {
     flex-direction: column;
+
     text-align: center;
     width: 100%;
     display: none;
   }
   .navbar__menu.open {
     display: block;
-    background-color: red;
   }
-
   .about__majors {
     flex-direction: column;
   }
@@ -518,11 +520,9 @@ p {
   .skillset {
     flex-direction: column;
   }
-
   .project {
     flex-grow: 1;
   }
-
   .testimonial__avatar {
     width: 80px;
     height: 80px;
